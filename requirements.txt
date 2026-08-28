@@ -1,12 +1,14 @@
 # AegisFold research environment
 # Recommended Python version: 3.11
+# PyTorch Geometric compiled wheels used by ESM-IF1.
+--find-links https://data.pyg.org/whl/torch-2.10.0+cpu.html
 #
 # Install PyTorch using the command appropriate for your CPU/CUDA platform if
 # you need a platform-specific build, then install this file with:
 #   python -m pip install -r requirements.txt
 
 # Core numerical and data tooling
-numpy>=1.26,<3
+numpy>=1.26,<2
 pandas>=2.2,<3
 scipy>=1.12,<2
 scikit-learn>=1.4,<2
@@ -14,10 +16,13 @@ joblib>=1.3,<2
 
 # Protein and structure processing
 biopython>=1.83,<2
-biotite>=0.40,<2
+# ESM-IF1 imports the legacy `filter_backbone` Biotite API.
+biotite==0.41.2
 
 # Deep learning and pretrained protein encoders
-torch>=2.2,<3
+torch==2.10.0
+torch-geometric>=2.5,<3
+torch-scatter==2.1.2
 transformers>=4.40,<5
 accelerate>=0.28,<2
 safetensors>=0.4,<1
