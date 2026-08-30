@@ -32,7 +32,7 @@ data/raw/
 data/processed/
 artifacts/
 checkpoints/
-models/
+/models/
 *.pt
 *.pth
 *.ckpt

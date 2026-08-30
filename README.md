@@ -57,3 +57,7 @@ aegisfold embed-structure path/to/protein.pdb --chain A
 Virtual environments, model weights, raw/processed datasets, checkpoints, and
 generated artifacts are intentionally excluded from Git. Model weights are
 loaded from the local Hugging Face or PyTorch cache at runtime.
+
+## Developer documentation
+
+- [Fusion model and test guide](docs/fusion-model.md)
