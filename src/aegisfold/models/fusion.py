@@ -1,5 +1,3 @@
-"""Neural fusion modules for AegisFold screening experiments."""
-
 from dataclasses import dataclass
 
 import torch

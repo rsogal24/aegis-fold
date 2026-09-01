@@ -1,4 +1,4 @@
-# Aegis Combined Fusion Model
+# Aegis
 
 This guide documents the current model in
 `src/aegisfold/models/fusion.py` and its tests in
